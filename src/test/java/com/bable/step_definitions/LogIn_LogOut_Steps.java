@@ -28,9 +28,9 @@ public class LogIn_LogOut_Steps {
         logInPage.logIn();
     }
 
-    @Then("user should see profile page")
-    public void userShouldSeeProfilePage() {
-        Assert.assertTrue(myBablePage.profilePageIsOpened());
+    @Then("user should see dashboard page")
+    public void userShouldSeeDashboardPage() {
+        Assert.assertTrue(myBablePage.dashboardPageIsOpened());
     }
 
     @And("user click logOut btn")

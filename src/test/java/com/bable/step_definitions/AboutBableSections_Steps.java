@@ -44,6 +44,7 @@ public class AboutBableSections_Steps {
 
     @Then("user should see all contents about BABLE Events")
     public void userShouldSeeAllContentsAboutBABLEEvents() {
+        bableEventsPage.searchHeaderDisplayed();
         bableEventsPage.searchBoxAndBtnDisplayed();
     }
 

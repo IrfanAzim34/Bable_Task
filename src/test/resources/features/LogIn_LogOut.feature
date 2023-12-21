@@ -4,6 +4,6 @@ Feature:Verify Log In and Out function as expected
     Given user click logIn btn on homepage
     And user should see login page
     And user input valid credentials and click login
-    Then user should see profile page
+    Then user should see dashboard page
     And user click logOut btn
     Then user should see login page

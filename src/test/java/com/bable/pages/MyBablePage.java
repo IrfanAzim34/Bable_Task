@@ -12,7 +12,7 @@ public class MyBablePage extends HomePage{
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public boolean profilePageIsOpened(){
+    public boolean dashboardPageIsOpened(){
         return this.openProfileBtn.isDisplayed();
     }
 
@@ -30,5 +30,20 @@ public class MyBablePage extends HomePage{
 
     @FindBy(xpath = "//li[@class='avatar']//li[3]")
     public WebElement logOutBtn;
+
+    @FindBy(xpath = "//div[@class='profile']")
+    public WebElement myProfileArea;
+
+    @FindBy(xpath = "//div[@class='newChat']/a")
+    public WebElement openDashboardBtn;
+
+    @FindBy(xpath = "//a[@class='bable-btn-text submit']")
+    public WebElement editProfileBtn;
+
+    @FindBy(xpath = "//section[@class='personalData']")
+    public WebElement generalDataArea;
+
+    @FindBy(xpath = "//div[@class='backwardButton']")
+    public WebElement editPageBackwardBtn;
 
 }

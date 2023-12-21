@@ -3,9 +3,9 @@ package com.bable.pages;
 import com.bable.utils.Driver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BableForCitiesPage extends HomePage{
+public class BableForNetworksPage extends HomePage{
 
-    public BableForCitiesPage(){
+    public BableForNetworksPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
